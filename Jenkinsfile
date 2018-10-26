@@ -1,9 +1,10 @@
 pipeline { 
     agent any 
     stages {
-        stage('Build') { 
+        stage('DEV') { 
             steps { 
                 echo 'DEV' 
+		sh 'docker build -t javatestapp:v1 .'
             }
         }
         stage('Test'){
