@@ -4,7 +4,7 @@ pipeline {
         stage('DEV') { 
             steps { 
                 echo 'DEV' 
-		sh 'docker build -t javatestapp:v1 .'
+		sh 'sudo ocker build -t javatestapp:v1 .'
             }
         }
         stage('Test'){
